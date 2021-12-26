@@ -3,6 +3,7 @@
 1. Screenshot :
 
    - Menu Utama
+   
      ![MENU UTAMA](https://user-images.githubusercontent.com/90256790/147396531-c42050cd-4577-4ac1-aeaf-f2c4d67dd7cc.png)
      
    - Tampilan Data
