@@ -45,3 +45,13 @@
       - *Harga Komplit*
    4. Durasi
    5. Uang 
+   
+**5. Metode Yang Diterapkan :**
+   
+    1. Struct Data
+    2. Perulangan
+    3. Percabangan
+    4. Insertion Sort
+       - *Ascending*
+       - *Descending*
+    5. Sequential Search
