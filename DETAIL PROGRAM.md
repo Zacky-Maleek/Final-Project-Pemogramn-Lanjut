@@ -13,3 +13,9 @@
    - Menu Pengurutan
 
      ![MENU PENGURUTAN](https://user-images.githubusercontent.com/90256790/147396508-8705d09b-f15b-49aa-bef5-20fbac74ed80.png)
+   
+   - Menu Pencarian
+   
+     ![MENU PENCARIAN](https://user-images.githubusercontent.com/90256790/147396555-18950f11-3892-4030-a68b-6c381c1763d4.png)
+
+   - Menu Penyewaan 
