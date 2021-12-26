@@ -48,10 +48,27 @@
    
 **5. Metode Yang Diterapkan :**
    
-    1. Struct Data
-    2. Perulangan
-    3. Percabangan
-    4. Insertion Sort
-       - *Ascending*
-       - *Descending*
-    5. Sequential Search
+   1. Struct Data
+   2. Percabangan
+   3. Perulangan
+   4. Insertion Sort
+      - *Ascending*
+      - *Descending*
+   5. Search
+   6. Swap
+   7. Operasi File
+   
+**6. Menu Yang Ditawarkan :**
+
+   1. Menu Tampilan Data Mobil dan Harga
+   2. Menu Pengurutan Data Mobil
+      - *Harga Termurah*
+      - *Harga Termahal*
+   3. Menu Pencarian Data Mobil
+      - *Berdasarkan Durasi*
+      - *Berdasarkan Nama Mobil*
+      - *Berdasarkan Merek Mobil*
+   4. Manu Penyewaan Mobil
+
+**7. Cara Penggunaan Aplikasi :**
+   
