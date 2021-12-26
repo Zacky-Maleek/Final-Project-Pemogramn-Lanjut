@@ -33,5 +33,5 @@
 **3. Deskripsi Program :**
      
      Program yang kami buat adalah program penyewaan jasa mobil yang menyediakan berbagai macam fitur menarik. 
-     Program kami adalah program yang dibuat dengan tujuan untuk memudahkan user atau customer dalam 
-     melakukan survei atau transaksi untuk menyewa mobil yang disediakan. 
+     Program kami adalah program yang dibuat dengan tujuan untuk memudahkan user atau customer dalam melakukan 
+     survei atau transaksi untuk menyewa mobil yang disediakan. 
