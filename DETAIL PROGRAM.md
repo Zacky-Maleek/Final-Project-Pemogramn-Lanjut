@@ -34,4 +34,14 @@
      
      Program yang kami buat adalah program penyewaan jasa mobil yang menyediakan berbagai macam fitur menarik. 
      Program kami adalah program yang dibuat dengan tujuan untuk memudahkan user atau customer dalam melakukan 
-     survei atau transaksi untuk menyewa mobil yang disediakan. 
+     survei atau transaksi untuk menyewa mobil yang disediakan.
+     
+**4. Jenis Data Yang Dibutuhkan :**
+   
+   1. Nama Mobil
+   2. Merek
+   3. Harga 
+      - *Harga Standar*
+      - *Harga Komplit*
+   4. Durasi
+   5. Uang 
