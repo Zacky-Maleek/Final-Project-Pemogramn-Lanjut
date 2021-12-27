@@ -13,7 +13,6 @@ struct data
 
 struct data penyewaan[10] = {};
 
-struct data swap[10] = {};
 
 int main()
 {
