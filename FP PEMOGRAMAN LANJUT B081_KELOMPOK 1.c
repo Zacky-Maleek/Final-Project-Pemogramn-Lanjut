@@ -336,7 +336,7 @@ menu:
             scanf("%d", &harga_standar);
             if (uang >= harga_standar)
             {
-                printf("Apakah anda ingin melanjutkan proses transaksi sewa mobil  : ");
+                printf("Apakah Anda ingin melanjutkan proses transaksi sewa mobil  : ");
                 printf("\n1. Ya");
                 printf("\n2. Tidak\n");
                 printf("==> Masukan Pilihan :");
