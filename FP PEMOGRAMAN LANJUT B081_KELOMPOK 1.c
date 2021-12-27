@@ -26,7 +26,7 @@ int main()
     penyewaan[0].harga_standar = 400000;
     penyewaan[0].harga_komplit = 500000;
 
-    strcpy(penyewaan[1].nama_mobil, "kijang Innova");
+    strcpy(penyewaan[1].nama_mobil, "Kijang Innova");
     strcpy(penyewaan[1].merek, "Toyota");
     penyewaan[1].harga_standar = 650000;
     penyewaan[1].harga_komplit = 750000;
