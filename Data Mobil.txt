@@ -1,0 +1,11 @@
+Nama                     Merek                   Harga Standar                  Harga Komplit                  
+ Avanza                  Toyota                 400000.000000                   500000.000000                       
+ kijang Innova           Toyota                 650000.000000                   750000.000000                        
+ Brio                    Honda                  300000.000000                   400000.000000                        
+ Jazz                    Honda                  350000.000000                   450000.000000                        
+ Grand livina            Nissan                 500000.000000                   600000.000000                        
+ Xpander                 Mitsubishi             550000.000000                   650000.000000                       
+ Alphard                 Toyota                 890000.000000                   990000.000000                      
+ Taycan                  Porsche                4500000.000000                  4900000.000000                     
+ G class                 Mercedes-Benz          7350000.000000                  7750000.000000                      
+ Aventador               Lamborghini            8900000.000000                  9500000.000000                      
