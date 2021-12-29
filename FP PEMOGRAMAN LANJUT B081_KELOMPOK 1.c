@@ -13,6 +13,7 @@ struct data
 
 struct data penyewaan[10] = {};
 
+struct data swap[10] = {};
 
 int main()
 {
@@ -21,68 +22,68 @@ int main()
     float dat1, dat2;
     int a, i, j, pilih, durasi;
     strcpy(penyewaan[0].nama_mobil, "Avanza     ");
-    strcpy(penyewaan[0].merek, "Toyota");
-    penyewaan[0].harga_standar = 400000;
+    strcpy(penyewaan[0].merek, "Toyota   ");
+    penyewaan[0].harga_standar = 425000;
     penyewaan[0].harga_komplit = 500000;
 
-    strcpy(penyewaan[1].nama_mobil, "Kijang Innova");
-    strcpy(penyewaan[1].merek, "Toyota");
-    penyewaan[1].harga_standar = 650000;
-    penyewaan[1].harga_komplit = 750000;
+    strcpy(penyewaan[1].nama_mobil, "kijang Innova");
+    strcpy(penyewaan[1].merek, "Toyota   ");
+    penyewaan[1].harga_standar = 300000;
+    penyewaan[1].harga_komplit = 375000;
 
     strcpy(penyewaan[2].nama_mobil, "Brio       ");
-    strcpy(penyewaan[2].merek, "Honda  ");
+    strcpy(penyewaan[2].merek, "Honda     ");
     penyewaan[2].harga_standar = 300000;
-    penyewaan[2].harga_komplit = 400000;
+    penyewaan[2].harga_komplit = 375000;
 
     strcpy(penyewaan[3].nama_mobil, "Jazz        ");
-    strcpy(penyewaan[3].merek, "Honda  ");
-    penyewaan[3].harga_standar = 350000;
+    strcpy(penyewaan[3].merek, "Honda     ");
+    penyewaan[3].harga_standar = 375000;
     penyewaan[3].harga_komplit = 450000;
 
     strcpy(penyewaan[4].nama_mobil, "Grand livina");
-    strcpy(penyewaan[4].merek, "Nissan");
+    strcpy(penyewaan[4].merek, "Nissan   ");
     penyewaan[4].harga_standar = 500000;
-    penyewaan[4].harga_komplit = 600000;
+    penyewaan[4].harga_komplit = 650000;
 
     strcpy(penyewaan[5].nama_mobil, "Xpander    ");
     strcpy(penyewaan[5].merek, "Mitsubishi");
-    penyewaan[5].harga_standar = 550000;
-    penyewaan[5].harga_komplit = 650000;
+    penyewaan[5].harga_standar = 600000;
+    penyewaan[5].harga_komplit = 800000;
 
     strcpy(penyewaan[6].nama_mobil, "Alphard    ");
-    strcpy(penyewaan[6].merek, "Toyota");
-    penyewaan[6].harga_standar = 890000;
-    penyewaan[6].harga_komplit = 990000;
+    strcpy(penyewaan[6].merek, "Toyota   ");
+    penyewaan[6].harga_standar = 750000;
+    penyewaan[6].harga_komplit = 1300000;
 
     strcpy(penyewaan[7].nama_mobil, "Taycan     ");
-    strcpy(penyewaan[7].merek, "Porsche");
-    penyewaan[7].harga_standar = 4500000;
-    penyewaan[7].harga_komplit = 4900000;
+    strcpy(penyewaan[7].merek, "Porsche  ");
+    penyewaan[7].harga_standar = 550000;
+    penyewaan[7].harga_komplit = 700000;
 
     strcpy(penyewaan[8].nama_mobil, "G class   ");
     strcpy(penyewaan[8].merek, "Mercedes-Benz");
-    penyewaan[8].harga_standar = 7350000;
-    penyewaan[8].harga_komplit = 7750000;
+    penyewaan[8].harga_standar = 700000;
+    penyewaan[8].harga_komplit = 1250000;
 
     strcpy(penyewaan[9].nama_mobil, "Aventador   ");
     strcpy(penyewaan[9].merek, "Lamborghini");
-    penyewaan[9].harga_standar = 8900000;
-    penyewaan[9].harga_komplit = 9500000;
+    penyewaan[9].harga_standar = 1000000;
+    penyewaan[9].harga_komplit = 1700000;
 
     for (a = 0; a < 10; a++)
     {
-        if ((penyewaan[a].harga_standar > (penyewaan[a].harga_komplit)))
-        {
-            penyewaan[a].durasi = 3;
-        }
-        else if ((penyewaan[a].harga_standar > (penyewaan[a].harga_komplit)))
+        if (penyewaan[a].harga_standar / penyewaan[a].harga_komplit >= 0.8)
         {
             penyewaan[a].durasi = 5;
         }
+        else if (penyewaan[a].harga_standar / penyewaan[a].harga_komplit >= 0.6)
+        {
+            penyewaan[a].durasi = 3;
+        }
         else
         {
-            penyewaan[a].durasi = 7;
+            penyewaan[a].durasi = 1;
         }
     }
 
@@ -102,7 +103,7 @@ menu:
         system("cls");
         FILE *data;
         char atel[850];
-        data = fopen("C:/Users/User/Downloads/Data Mobil.txt", "r");
+        data = fopen("C:/Users/PC/Downloads/asu.txt", "r");
         while (!feof(data))
         {
             fgets(atel, 850, data);
@@ -164,7 +165,7 @@ menu:
         int k = 0;
         system("cls");
         printf("===== Pilih Pencarian Data =====\n\n");
-        printf(" 1. Durasi\n");
+        printf(" 1. Durasi Peminjaman\n");
         printf(" 2. Nama Mobil\n");
         printf(" 3. Merek\n");
         printf("==>Masukkan Pilihan : ");
@@ -172,14 +173,15 @@ menu:
 
         if (pilih == 1)
         {
-            printf("Masukkan Durasi Penyewaan Mobil : ");
+            printf("\nDurasi Peminjaman (1 hari, 3 hari, 5 hari)\n\n");
+            printf("Masukkan Durasi Penyewaan Mobil (1/3/5) : ");
             scanf("%d", &durasi);
 
             for (i = 0; i < 10; i++)
             {
                 if (penyewaan[i].durasi == durasi)
                 {
-                    benar = 12;
+                    benar = 1;
                     simpan[k] = i;
                     k++;
                 }
@@ -193,7 +195,7 @@ menu:
                 {
                     printf("%s\t\t%s\t\t%d\n", penyewaan[simpan[i]].nama_mobil, penyewaan[simpan[i]].merek, penyewaan[simpan[i]].durasi);
                 }
-                sleep(5);
+                system("pause");
                 goto menu;
             }
             else
@@ -228,7 +230,7 @@ menu:
                 {
                     printf("%s \t\t %s \t\t %d \n", penyewaan[simpan[i]].nama_mobil, penyewaan[simpan[i]].merek, penyewaan[simpan[i]].durasi);
                 }
-                sleep(5);
+                system("pause");
                 goto menu;
             }
             else
@@ -263,7 +265,7 @@ menu:
                 {
                     printf("%s \t\t %s \t %d \t \n", penyewaan[simpan[i]].nama_mobil, penyewaan[simpan[i]].merek, penyewaan[simpan[i]].durasi);
                 }
-                sleep(5);
+                system("pause");
                 goto menu;
             }
             else
@@ -335,7 +337,7 @@ menu:
             scanf("%d", &harga_standar);
             if (uang >= harga_standar)
             {
-                printf("Apakah Anda ingin melanjutkan proses transaksi sewa mobil  : ");
+                printf("Apakah anda ingin melanjutkan proses transaksi sewa mobil  : ");
                 printf("\n1. Ya");
                 printf("\n2. Tidak\n");
                 printf("==> Masukan Pilihan :");
