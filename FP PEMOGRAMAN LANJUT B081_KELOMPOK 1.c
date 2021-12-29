@@ -21,7 +21,7 @@ int main()
     char nama[30], merek[30];
     float dat1, dat2;
     int a, i, j, pilih, durasi;
-        strcpy(penyewaan[0].nama_mobil, "Avanza");
+    strcpy(penyewaan[0].nama_mobil, "Avanza");
     strcpy(penyewaan[0].merek, "Toyota");
     penyewaan[0].harga_standar = 425000;
     penyewaan[0].harga_komplit = 500000;
@@ -103,7 +103,7 @@ menu:
         system("cls");
         FILE *data;
         char atel[850];
-        data = fopen("C:/Users/PC/Downloads/asu.txt", "r");
+        data = fopen("C:/Users/PC/Downloads/Data Mobil.txt", "r");
         while (!feof(data))
         {
             fgets(atel, 850, data);
